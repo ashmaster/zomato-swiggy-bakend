@@ -71,7 +71,7 @@ app.get('/getZomDets', async (req,res)=>{
 })
 
 
+const PORT = process.env.PORT || 5001;
+app.listen(PORT)
 
-app.listen(5000)
-
-console.log("Api running on port 3000")
+console.log("Api running on Heroku")
