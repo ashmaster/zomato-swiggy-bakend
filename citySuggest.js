@@ -7,7 +7,7 @@ async function citySuggest(q){
         response = res.data
     })}
     catch(err){
-        response = "Error Occured"
+        response = err
     }
     return response
 }
