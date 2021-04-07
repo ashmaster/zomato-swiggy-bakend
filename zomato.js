@@ -62,7 +62,7 @@ async function getZomato(cityid,foodid,lat,long,food){
         });
         
     })
-    })
+    }).catch(err=> resArray = ["Error"])
     return resArray
 }
 
