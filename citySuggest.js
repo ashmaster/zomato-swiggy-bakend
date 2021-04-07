@@ -10,8 +10,8 @@ async function citySuggest(q){
     let response = {}
     try{
     await axios.get(`https://www.zomato.com/webroutes/location/search?q=${q}&is_address_flow=true`,{
-        jar: cookieJar, // tough.CookieJar or boolean
-        withCredentials: true, // If true, send cookie stored in jar
+        jar: cookieJar, 
+        withCredentials: true,
       }).then(res => {
         response = res.data
     })}
