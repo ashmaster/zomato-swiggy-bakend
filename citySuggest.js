@@ -15,6 +15,7 @@ async function citySuggest(q){
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
         }
       }).then(res => {
         response = res.data
