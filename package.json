@@ -11,9 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "axios-cookiejar-support": "^1.0.1",
     "cheerio": "^1.0.0-rc.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "puppeteer": "^8.0.0"
+    "puppeteer": "^8.0.0",
+    "tough-cookie": "^4.0.0"
   }
 }

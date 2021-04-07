@@ -1,5 +1,4 @@
 const axios = require('axios');
-
 async function getLocInfo(lat,long,pid){
     let response = {}
     try{
