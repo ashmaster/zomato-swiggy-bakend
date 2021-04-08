@@ -5,7 +5,7 @@ const zom = require('./zomato');
 
 const getData = async(req) => {
     let resArray = []
-    resArray = await zom.getZomato(req.cityid,req.foodid,req.lat,req.long,req.food)
+    resArray = await zom.getZomato(req.cityname,req.foodid,req.lat,req.long,req.food)
     return resArray
 }
 

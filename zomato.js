@@ -1,9 +1,9 @@
 const axios = require("axios");
 const cheerio = require("cheerio")
 
-async function getZomato(cityid,foodid,lat,long,food){
+async function getZomato(cityname,foodid,lat,long,food){
     let resArray = []
-    await axios.get(`https://www.zomato.com/index.php?entity_type=city&entity_id=${cityid}&city=${cityid}&dishv2_id=${foodid}&category=1`).then((res) => {
+    await axios.get(`https://www.zomato.com/${cityname}/restaurants?dishv2_id=${foodid}&category=1`).then((res) => {
         const $ = cheerio.load(res.data, {xmlMode: false});
         const elems = $('div.jumbo-tracker');
         var rests = $('script').get()[4].children[0].data
